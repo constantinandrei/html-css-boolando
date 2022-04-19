@@ -7,3 +7,43 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+    background-color: #F66903;
+    padding: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.nav-item {
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 25px;
+    color: white;
+    padding: 0 0.2rem;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 140px;
+}
