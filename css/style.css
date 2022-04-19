@@ -8,6 +8,8 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Header Classes*/
+
 header {
     background-color: #F66903;
     padding: 1rem;
@@ -17,6 +19,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
+    opacity: 0.9;
 }
 
 .container {
@@ -51,9 +55,102 @@ header {
     width: 140px;
 }
 
+/*Main Classes*/
+.main-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: calc(1.5rem + 66px);
+    padding-bottom: 2rem;
+}
+
+.main-col {
+    
+    flex-basis: calc((100% - 2rem) / 3);
+}
+
+.product {
+    position: relative;
+}
+
+.product-favorite-logo {
+    width: 40px;
+    padding: .5rem;
+    padding-bottom: 0.3rem;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    background-color: white;
+}
+
+.product-favorite-logo:hover {
+    color: red;
+}
+
+.product-over-img-info {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+}
+
+.product-discount, .product-sustain {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.product-discount {
+    background-color: red;
+}
+
+.product-sustain {
+    background-color: green;
+}
+
+.product .prod-img {
+    width: 100%;
+}
+
+.product-image-hover {
+    display: none;
+}
+
+.product:hover .product-image-hover {
+    display: inline-block;
+}
+
+.product:hover .product-image-default {
+    display: none;
+}
+
+.product-brand {
+    font-size: .9rem;
+}
+
+.product-name {
+    font-weight: 500;
+    padding: 0.2rem 0;
+}
+
+.product-price {
+    font-weight: bold;
+    color: red;
+    font-size: .9rem;
+}
+
+.product-initial-price {
+    text-decoration: line-through;
+    color: black;
+    font-weight: normal;
+}
+
+
+
+/*Footer classes*/
+
 footer {
     background-color: #1A1A1A;
-    position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
